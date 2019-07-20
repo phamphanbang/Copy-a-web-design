@@ -1,6 +1,11 @@
 body  {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(36, 32, 32);
+    color: aliceblue;
+}
 
+*::before {
+    box-sizing: border-box;
 }
 
 header {
@@ -11,7 +16,7 @@ header {
     z-index: 999;
     background: #262626;
     margin-top: 0;
-    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px 3px rgba(65, 62, 62, 0.2);
 }
 
 .header-contain {
@@ -23,7 +28,7 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
 }
 
 .nav-bar {
@@ -80,7 +85,6 @@ a {
     margin-right: 5%;
     margin-left: 5%; 
     padding-left: 15px;
-    
     margin-top: 40px;
     margin-bottom: 40px; 
     position: relative;
@@ -124,9 +128,10 @@ button {
     
 }
 
+
+
 .info-image {
     display: flex;
-    position: absolute;
     top: 25%;
     right: 15%;
 }
@@ -165,3 +170,88 @@ button {
     width: 100%;
     background-position: 100% 100%;
 }
+
+
+.section-tiltle {
+   text-align: center;
+}
+.section-tiltle h3 {
+    color: #ff8c05;
+    font-weight: 700;
+    margin-block-start: 0px;
+    font-size: 30px;
+}
+
+.box-content {
+    padding: 40px 40px ;
+}
+
+.resume-box {
+    display: flex;
+}
+
+.resume {
+    width: 50%;
+}
+
+.resume-list {
+    width: 50%;
+}
+
+.resume-content h3 {
+    color: #ff8c05;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.resume-content h2  {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.resume-content span {
+    color: #ff8c05;
+}
+
+.resume-list .time-line {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.resume-list .time-line::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+    background: #fff;
+}
+
+.resume-list .time-line > li::before {
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+    width: 16px;
+    height: 16px;
+    z-index: 400;
+}
+
+.dot {
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+
+.dot .dot-button {
+    background: #979292;
+    border-radius: 90px;
+}
+/*intro img and about img still have problem , dot button not found:) , rusume still need fixing */
