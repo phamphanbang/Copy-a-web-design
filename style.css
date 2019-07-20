@@ -3,6 +3,17 @@ body  {
 
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #262626;
+    margin-top: 0;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
 .header-contain {
     display: flex;
     top: 0;
@@ -12,6 +23,7 @@ body  {
     align-items: center;
     position: fixed;
     width: 100%;
+    
 }
 
 .nav-bar {
@@ -60,17 +72,18 @@ a {
 
 .fix {
     width: 100%;
-    height: 150px;
+    height: 130px;
 }
 
 .container {
     background-color:  rgb(68, 63, 63);
-    widows: 100%;
     margin-right: 5%;
     margin-left: 5%; 
     padding-left: 15px;
-    padding-right: 15px;
-
+    
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    position: relative;
 }
 
 .info {
@@ -113,11 +126,42 @@ button {
 
 .info-image {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 25%;
+    right: 15%;
 }
 
 .info-image image {
-    width: 40%;
+    width: 100%;
+    height: auto;
 }
 
+
+.about {
+    display: flex;
+    color: aliceblue;
+}
+
+.about-info {
+    padding: 40px 40px;
+}
+
+.about-info h3 {
+    color: rgb(252, 101, 0);
+    font-weight: 300;
+    font-size: 30px;
+
+}
+
+.about-info .content h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.about-picture {
+    background: url(./about.jpg);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-position: 100% 100%;
+}
