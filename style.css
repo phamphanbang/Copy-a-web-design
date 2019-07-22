@@ -295,6 +295,14 @@ a {
     color: aliceblue;
 }
 
+.menu .menu-item:hover a {
+    color: #ff8c05;
+}
+
+.menu .active a {
+    color: #ff8c05;
+}
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -321,9 +329,91 @@ a {
     position: absolute;
     opacity: 0;
     transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.portfolio-item .overlay span {
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-left: 25px;
+    
+}
+
+.portfolio-item .overlay h4 {
+    margin: 5px 25px;
 }
 
 .portfolio-item:hover .overlay {
     opacity: 1;
 }
 
+/*portfolio end*/
+/*blog*/
+
+.blog-background {
+    height: 100%;
+    background-color:  rgb(36, 32, 32);
+    padding: 0px 0px;
+}
+
+.blog-box {
+    display: flex;
+}
+
+.blog {
+    padding: 0px 15px;
+
+}
+
+.left {
+    padding-left: 0px;
+}
+
+.right {
+    padding-right: 0px;
+}
+
+.blog .blog-img {
+    overflow: hidden;
+
+}
+
+.blog .blog-img img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius : 3px;
+    transition: all 0.5s;
+}
+
+.blog-tiltle {
+    background-color: #262626;
+    padding: 23px 10px;
+}
+
+.blog-tiltle h3 a {
+    color: aliceblue;
+}
+
+.blog-date a {
+    color: #ff8c05;
+    font-weight: 600;
+}
+
+.blog-tiltle a:hover {
+    color: #ff8c05;
+}
+
+.blog:hover .blog-img img {
+    transform: scale(1.04);
+}
+
+.blog-date .fas {
+    margin: 0px 5px;
+    font-weight: 900;
+    font-size: 7px;
+    color: #868181;
+}
