@@ -417,3 +417,66 @@ a {
     font-size: 7px;
     color: #868181;
 }
+
+/**/
+
+.container .contact-box {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 15px 15px;
+}
+
+.contact-box .content-left {
+    width: 50%;
+}
+
+.contact-box .content-right {
+    width: 50%;
+}
+
+.tiltle-left h3 {
+    color: #ff8c05;
+    font-weight: 700;
+    margin-block-start: 0px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.contact-tiltle h3 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.icon-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.icon-list li {
+    margin-right: 50px;
+}
+
+.content-right .row {
+    display: flex;
+    width: 100%;
+}
+
+.text-input {
+    width: 40%;
+    display: block;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: aliceblue;
+    padding: 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #5c5959;
+    border-radius: 0;
+}
+
